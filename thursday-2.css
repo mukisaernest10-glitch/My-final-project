@@ -1,0 +1,42 @@
+1. Layout the row horizontally
+.services-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centers the cards on the screen */
+  gap: 20px;               /* Adds spacing between the cards */
+  padding: 40px 20px;
+  background-color: #fcf8f5; /* Light background color matching the example */
+}
+
+/* 2. Style each individual card */
+.service-card {
+  background-color: #ffffff;
+  border-radius: 12px;     /* Rounds the corners of the card */
+  padding: 16px;
+  width: 220px;            /* Sets a uniform width for all cards */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Adds a soft drop shadow */
+  text-align: left;        /* Aligns text to the left */
+}
+
+/* 3. Style the images inside the cards */
+.service-card img {
+  width: 100%;             /* Makes image fill the width of the card */
+  height: 150px;           /* Gives all images a uniform height */
+  object-fit: cover;       /* Prevents images from stretching/distorting */
+  border-radius: 8px;      /* Rounds the corners of the images */
+}
+
+/* 4. Typography styling */
+.service-card h3 {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  margin: 12px 0 4px 0;
+  color: #333333;
+}
+
+.service-card p {
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  margin: 0;
+  color: #666666;
+}
